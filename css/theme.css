@@ -9559,10 +9559,8 @@ a.skip-link {
 
 .card {
   z-index: 0;
-  bottom: 0;
-  left: 0;
-  transition: all .2s ease 0s;
-  overflow: hidden;
+  transition: all .5s ease 0s;
+  height: 100% !important;
   border-radius: 0; }
 
 .card:hover {
@@ -9570,7 +9568,8 @@ a.skip-link {
   left: -10px; }
 
 .event-bg {
-  background: url("../imgs/hover-background-pattern.png") repeat; }
+  background: url("../imgs/hover-background-pattern.png") repeat;
+  height: 100% !important; }
 
 h1 {
   font-family: 'Barlow Condensed', sans-serif;
@@ -9587,7 +9586,8 @@ a {
   font-size: 1.1em; }
 
 .event {
-  margin: 10px 0; }
+  margin: 10px 0;
+  height: 100% !important; }
 
 .event h2 {
   text-align: left; }
