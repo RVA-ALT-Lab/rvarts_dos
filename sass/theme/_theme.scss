@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+/*@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Raleway');*/
+
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.card {
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  transition: all .2s ease 0s;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.card:hover {
+  bottom: 10px;
+  left: -10px;
+}
+
+.event-bg {
+  background: url("../imgs/hover-background-pattern.png") repeat;
+
+}
+
+h1 {
+    font-family:'Barlow Condensed', sans-serif;
+    font-size: 5.5em;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+a {  
+  font-family:'Nunito', sans-serif;
+  text-transform: uppercase;
+  color: #0052cc;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.event {
+  margin: 10px 0;
+}
+
+.event h2 {
+  text-align: left;
+}
+
+.event-title {
+  margin: 20px; 
+}
+
+
+/*stamp css from https://codepen.io/555/pen/pdwvBP*/
+.date {  
+  color: #555;
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+.col-md-6 .date-holder {
+  height: 150px;
+}
+
+.col-md-4 .date-holder {
+  height: 100px;
+}
+
+.date-holder.black {
+	background-image: url(../imgs/cardbottom-black.png);
+	background-repeat: no-repeat;
+    background-position: bottom; 
+    background-size: cover;
+}
+
+.date-holder.blue {
+	background-image: url(../imgs/cardbottom-blue.png);
+	 background-repeat: no-repeat;
+     background-position: bottom; 
+    background-size: cover;
+}
+.date-holder.green {
+	background-image: url(../imgs/cardbottom-green.png);
+	 background-repeat: no-repeat;
+     background-position: bottom; 
+    background-size: cover;
+}
+.date-holder.pink {
+	background-image: url(../imgs/cardbottom-pink.png);
+	  background-position: bottom; 
+    background-size: cover;
+}
+.date-holder.red {
+	background-image: url(../imgs/cardbottom-red.png);
+	  background-position: bottom; 
+    background-size: cover;
+}
+.date-holder.yellow {
+	background-image: url(../imgs/cardbottom-yellow.png);
+	  background-position: bottom; 
+    background-size: cover;
+}
+
+.col-md-6 .event-title {
+   background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.col-md-4 .event-title {
+  font-size: 1.5em;
+}// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
