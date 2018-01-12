@@ -9559,9 +9559,11 @@ a.skip-link {
 
 .card {
   z-index: 0;
-  transition: all .5s ease 0s;
+  transition: all .2s ease 0s;
   height: 100% !important;
-  border-radius: 0; }
+  border-radius: 0;
+  bottom: 0;
+  left: 0; }
 
 .card:hover {
   bottom: 10px;
