@@ -14,7 +14,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="full-width-page-wrapper">
 
 	<div class="container">
-          <div class="row" id="theContent">
+          <div class="row" id="dayContent">
+          </div>        
+          <div class="row" id="monthContent">
+          </div>
+          <div class="row" id="otherContent">
           </div>
         </div>
 

@@ -10,17 +10,17 @@ fetch(
   data = data.events;
   for (i = 0; i < data.length; i++) {
    //console.log(data[i].title);
-    writeEvents(data[i]);
+   var destination = getDestination(data[i]);
+    writeEvents(data[i], destination);
   } 
 }).then(function(){
   colorRand(); 
 });
 
 
-
-function writeEvents(data) {
+function writeEvents(data, destination) {
 var match =  classDate(data);
-  var post = jQuery('#theContent').append(
+  var post = jQuery(destination).append(
     jQuery(
       '<div id="' +
       data.id +
@@ -30,6 +30,23 @@ var match =  classDate(data);
       '</h2>'+theDate(data)+'<div class="date-holder"></div></div></div></a></div>' 
     ) 
   );
+}
+
+function getDestination (data) {
+   var today = new Date();
+  var thisMonth = today.getMonth()+1;
+  var thisDay = today.getDate()+1;
+  //get event date
+  var month = data.start_date_details.month;
+  var day = data.start_date_details.day;
+  if (thisMonth+thisDay == month+day ){
+      return '#dayContent'
+      }
+  if (thisMonth == month) {
+    return '#monthContent'
+  } else {
+    return '#otherContent'
+  }
 }
 
 
