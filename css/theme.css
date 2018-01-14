@@ -9580,10 +9580,7 @@ a.skip-link {
 .navbar-toggler-icon {
   background-color: red; }
 
-#page-wrapper {
-  padding: 80px 0; }
-
-#date-wrapper {
+#page-wrapper, #date-wrapper {
   padding: 80px 0; }
 
 h1 {
@@ -9693,6 +9690,11 @@ a {
   font-size: 1.5em; }
 
 /*set this for mobile menu - background color solid and remove flex*/
+@media only screen and (max-device-width: 768px) {
+  /* Styles */
+  #main-menu {
+    flex-direction: column; } }
+
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

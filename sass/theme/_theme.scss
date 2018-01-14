@@ -39,13 +39,10 @@
     background-color: red;
 }
 
-#page-wrapper {
+#page-wrapper, #date-wrapper {
     padding: 80px 0;
 }
 
-#date-wrapper {
-    padding: 80px 0;
-}
 
 h1 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -184,3 +181,10 @@ a {
 
 /*set this for mobile menu - background color solid and remove flex*/
 
+
+@media only screen and (max-device-width : 768px) {
+/* Styles */
+	#main-menu{
+		flex-direction:column;
+	}
+}
