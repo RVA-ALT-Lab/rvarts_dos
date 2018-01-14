@@ -27,7 +27,7 @@ var match =  classDate(data);
       '" class="event '+classDate(data)+ '"' +
       '><a href="'+data.website+'"><div class="event-bg h-100"><div class="card event-content h-100"><img src="'+featuredImg(data)+'"><h2 class="card-title event-title">' +
       data.title +
-      '</h2>'+theDate(data)+'<div class="date-holder"></div></div></div></a></div>' 
+      '</h2>'+theDate(data)+'</div></div></a></div>' 
     ) 
   );
 }
@@ -98,7 +98,7 @@ function classDate(data){
 
 function colorRand(){
   var colors = ['black','blue','green','pink','red','yellow'];
-  var dates = document.querySelectorAll('.date-holder'); 
+  var dates = document.querySelectorAll('.card'); 
   for (i = 0; i < dates.length; i++){
      var color = colors[Math.floor(Math.random()*colors.length)];
      dates[i].classList.add(color);

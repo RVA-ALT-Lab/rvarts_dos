@@ -9555,7 +9555,7 @@ a.skip-link {
 /*@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Raleway');*/
 /*menu*/
 #rvarts {
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
   border-bottom: 1px solid #0052cc; }
 
 .navbar-dark .navbar-brand {
@@ -9568,13 +9568,36 @@ a.skip-link {
   justify-content: flex-end;
   color: #0052cc; }
 
-#main-menu li, #main-menu a {
+#main-menu li,
+#main-menu a {
   text-align: right;
   color: #0052cc; }
 
 [itemprop="logo"] {
   max-height: 36px;
   width: auto; }
+
+.navbar-toggler-icon {
+  background-color: red; }
+
+#page-wrapper {
+  padding: 80px 0; }
+
+#date-wrapper {
+  padding: 80px 0; }
+
+h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.5em;
+  margin: 0;
+  color: #484242; }
+
+a {
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  color: #0052cc;
+  text-decoration: none;
+  font-size: 1.1em; }
 
 /*cards*/
 .card img {
@@ -9588,7 +9611,8 @@ a.skip-link {
   border-radius: 0;
   bottom: 0;
   left: 0;
-  border: 1px solid; }
+  border: 1px solid;
+  padding: 0 0 100px 0; }
 
 .card:hover {
   bottom: 10px;
@@ -9598,23 +9622,9 @@ a.skip-link {
   background: url("../imgs/hover-background-pattern.png") repeat;
   height: 100% !important; }
 
-h1 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 5.5em;
-  margin-left: 10px;
-  margin-bottom: 0;
-  margin-top: 0; }
-
-a {
-  font-family: 'Nunito', sans-serif;
-  text-transform: uppercase;
-  color: #0052cc;
-  text-decoration: none;
-  font-size: 1.1em; }
-
 .event {
   margin: 10px 0;
-  height: 100% !important; }
+  height: auto; }
 
 .event h2 {
   text-align: left; }
@@ -9635,38 +9645,41 @@ a {
 .col-md-4 .date-holder {
   height: 100px; }
 
-.date-holder.black {
+.card.black {
   background-image: url(../imgs/cardbottom-black-sans.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover; }
+  background-size: contain; }
 
-.date-holder.blue {
+.card.blue {
   background-image: url(../imgs/cardbottom-blue-sans.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover; }
+  background-size: contain; }
 
-.date-holder.green {
+.card.green {
   background-image: url(../imgs/cardbottom-green-sans.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover; }
+  background-size: contain; }
 
-.date-holder.pink {
+.card.pink {
   background-image: url(../imgs/cardbottom-pink-sans.png);
+  background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover; }
+  background-size: contain; }
 
-.date-holder.red {
+.card.red {
   background-image: url(../imgs/cardbottom-red-sans.png);
+  background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover; }
+  background-size: contain; }
 
-.date-holder.yellow {
+.card.yellow {
   background-image: url(../imgs/cardbottom-yellow-sans.png);
+  background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover; }
+  background-size: contain; }
 
 .col-md-6 .event-title {
   background-repeat: no-repeat;
@@ -9675,6 +9688,7 @@ a {
 .col-md-4 .event-title {
   font-size: 1.5em; }
 
+/*set this for mobile menu - background color solid and remove flex*/
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style

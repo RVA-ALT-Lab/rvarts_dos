@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 
+
 /*@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Raleway');*/
 
+
 /*menu*/
+
 #rvarts {
-	background-color: rgba(0,0,0,0) !important;
-	border-bottom: 1px solid #0052cc;
+    background-color: rgba(255, 255, 255, .9) !important;
+    border-bottom: 1px solid #0052cc;
 }
 
 .navbar-dark .navbar-brand {
@@ -14,37 +17,68 @@
 }
 
 #main-menu {
-	-webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-justify-content: flex-end;
-   justify-content: flex-end;
-	color: #0052cc;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    color: #0052cc;
 }
 
-#main-menu li, #main-menu a {
-	text-align: right;
-	color: #0052cc;
+#main-menu li,
+#main-menu a {
+    text-align: right;
+    color: #0052cc;
 }
 
 [itemprop="logo"] {
-	max-height: 36px;
-	width: auto;
+    max-height: 36px;
+    width: auto;
 }
 
+.navbar-toggler-icon {
+    background-color: red;
+}
+
+#page-wrapper {
+    padding: 80px 0;
+}
+
+#date-wrapper {
+    padding: 80px 0;
+}
+
+h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3.5em;
+    margin: 0;
+    color: #484242;
+}
+
+a {
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    color: #0052cc;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+
 /*cards*/
+
 .card img {
     height: 200px;
     object-fit: cover;
 }
 
 .card {
-  z-index: 0;
-  transition: all .2s ease 0s;
-  height: 100%!important;
-  border-radius: 0;
-  bottom: 0;
-  left: 0;
-  border: 1px solid;
+    z-index: 0;
+    transition: all .2s ease 0s;
+    height: 100%!important;
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid;
+    padding: 0 0 100px 0;
 }
 
 .card:hover {
@@ -57,25 +91,10 @@
     height: 100%!important;
 }
 
-h1 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 5.5em;
-    margin-left: 10px;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-a {
-    font-family: 'Nunito', sans-serif;
-    text-transform: uppercase;
-    color: #0052cc;
-    text-decoration: none;
-    font-size: 1.1em;
-}
 
 .event {
     margin: 10px 0;
-    height: 100%!important;
+    height: auto;
 }
 
 .event h2 {
@@ -85,6 +104,7 @@ a {
 .event-title {
     margin: 20px;
 }
+
 
 
 
@@ -106,43 +126,46 @@ a {
     height: 100px;
 }
 
-.date-holder.black {
+.card.black {
     background-image: url(../imgs/cardbottom-black-sans.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
 }
 
-.date-holder.blue {
+.card.blue {
     background-image: url(../imgs/cardbottom-blue-sans.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
 }
 
-.date-holder.green {
+.card.green {
     background-image: url(../imgs/cardbottom-green-sans.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
 }
 
-.date-holder.pink {
+.card.pink {
     background-image: url(../imgs/cardbottom-pink-sans.png);
+    background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
 }
 
-.date-holder.red {
+.card.red {
     background-image: url(../imgs/cardbottom-red-sans.png);
+    background-repeat: no-repeat;    
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
 }
 
-.date-holder.yellow {
+.card.yellow {
     background-image: url(../imgs/cardbottom-yellow-sans.png);
+    background-repeat: no-repeat;    
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
 }
 
 .col-md-6 .event-title {
@@ -153,3 +176,6 @@ a {
 .col-md-4 .event-title {
     font-size: 1.5em;
 } // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+/*set this for mobile menu - background color solid and remove flex*/
+
