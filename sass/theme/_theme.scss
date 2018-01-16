@@ -36,7 +36,7 @@
 }
 
 .navbar-toggler-icon {
-    background-color: red;
+    background-color: #ff1000;
 }
 
 #page-wrapper, #date-wrapper {
@@ -45,10 +45,14 @@
 
 
 h1 {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 3.5em;
     margin: 0;
     color: #484242;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
 }
 
 #events {
@@ -173,7 +177,39 @@ a {
 
 .col-md-4 .event-title {
     font-size: 1.5em;
-} // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+}
+
+/*tribe-events styles overide*/
+
+.tribe-events-calendar {
+    font-family: 'Nunito', sans-serif;
+}
+
+h2.tribe-events-page-title {
+    font-family: 'Nunito', sans-serif;
+}
+
+.tribe-events-calendar thead th {
+    background-color: #0052cc;
+    color: #fff;
+    font-family: Nunito, sans-serif;
+    border: 1px solid #0052cc;
+}
+
+#tribe-events-content .tribe-events-calendar td {
+    border: 1px solid #0052cc;
+}
+
+#tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+    background-color: #ff1000;
+}
+
+#tribe-events-content .tribe-events-calendar td.tribe-events-present.mobile-active:hover, .tribe-events-calendar td.tribe-events-present.mobile-active, .tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present.mobile-active div[id*=tribe-events-daynum-] a {
+    background-color: #ff1000;
+}
+
+
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
 /*set this for mobile menu - background color solid and remove flex*/
 
