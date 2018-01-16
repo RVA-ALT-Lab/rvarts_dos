@@ -40,7 +40,7 @@
 }
 
 #page-wrapper, #date-wrapper {
-    padding: 80px 0;
+    padding: 120px 0;
 }
 
 
@@ -81,6 +81,7 @@ a {
     left: 0;
     border: 1px solid;
     padding: 0 0 100px 0;
+    height: auto;
 }
 
 .card:hover {
@@ -92,7 +93,6 @@ a {
     background: url("../imgs/hover-background-pattern.png") repeat;
     height: 100%!important;
 }
-
 
 .event {
     margin: 10px 0;
@@ -106,10 +106,6 @@ a {
 .event-title {
     margin: 20px;
 }
-
-
-
-
 
 /*stamp css from https://codepen.io/555/pen/pdwvBP*/
 

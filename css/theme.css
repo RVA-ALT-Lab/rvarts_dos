@@ -9581,7 +9581,7 @@ a.skip-link {
   background-color: red; }
 
 #page-wrapper, #date-wrapper {
-  padding: 80px 0; }
+  padding: 120px 0; }
 
 h1 {
   font-family: 'Barlow Condensed', sans-serif;
@@ -9613,7 +9613,8 @@ a {
   bottom: 0;
   left: 0;
   border: 1px solid;
-  padding: 0 0 100px 0; }
+  padding: 0 0 100px 0;
+  height: auto; }
 
 .card:hover {
   bottom: 10px;

@@ -59,8 +59,13 @@ function theDate(data){
   var month = data.start_date_details.month;
   var day = data.start_date_details.day;
   var hour = data.start_date_details.hour;
+  var meridian = 'AM'
+  if (hour > 12){
+    hour = hour -12;
+    meridian = 'PM';
+  }
   var minute = data.start_date_details.minutes;
-  return '<div class="date">'+ month + '/' + day + '@' + hour + ':' +minute + "</div>";
+  return '<div class="date">'+ month + '/' + day + '@' + hour + ':' +minute + meridian + "</div>";
 }
 
 
