@@ -9603,6 +9603,9 @@ a {
   text-decoration: none;
   font-size: 1.1em; }
 
+.wrapper {
+  padding: 80px 0; }
+
 /*cards*/
 .card img {
   height: 200px;
