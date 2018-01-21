@@ -62,7 +62,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</button>
 
 				<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
+				<?php 
+				if ( is_user_logged_in() )
+						{
+				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
@@ -70,9 +73,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
+						'menu'			  => 'main-menu',	
 						'walker'          => new understrap_WP_Bootstrap_Navwalker(),
 					)
-				); ?>
+				); } else {
+					wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'menu'			  => 'guest-menu',							
+						'walker'          => new understrap_WP_Bootstrap_Navwalker(),
+							)
+						);
+				}
+
+
+				?>
 			<?php if ( 'container' == $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>
